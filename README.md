@@ -13,8 +13,7 @@ A Cordova 3.x compatible version of https://github.com/macdonst/VideoPlayer.  Th
 
 		$ cordova plugin add org.apache.cordova.device
 		
-however, I have not pushed this plugin to the apache community, so we need to install it "manually" (which is actually super simple, as you'll see below)
-
+which creates a directory named "org.apache.cordova.device" inside of helloworld/plusing, however, I have not pushed this plugin to the apache community, so we need to install it "manually" as shown here.
 5. Create a directory named "com.github.cnanders.cordova-3-android-video"
 6. Copy the contents of the repo to helloworld/plugins/com.github.cnanders.cordova-3-android-video.
 7. At this point, the plugin is now "available" but it still won't be added to any platforms.  
