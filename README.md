@@ -1,6 +1,6 @@
 # cordova-3-android-video
 
-A Cordova 3.x compatible version of https://github.com/macdonst/VideoPlayer.  This makes it possible to play HTML5 videos in a Cordova/PhoneGap Android application.  
+A Cordova 3.x compatible version of https://github.com/macdonst/VideoPlayer.  This makes it possible to play HTML5 videos in a Cordova/PhoneGap 3.x Android application.  It fixes the .api namespace issue with the Java includes and has Cordova 3.x style plugin installation instructions. (In 2.x Cordova, plugin installation was different, it is actually a lot easier in 3.x)  
 
 ### Installation
 1. Download the repo
@@ -13,7 +13,7 @@ A Cordova 3.x compatible version of https://github.com/macdonst/VideoPlayer.  Th
 
 		$ cordova plugin add org.apache.cordova.device
 		
-which creates a directory named "org.apache.cordova.device" inside of helloworld/plusing, however, I have not pushed this plugin to the apache community, so we need to install it "manually" as shown here.
+which creates a directory named "org.apache.cordova.device" inside of helloworld/plugins, however, I have not pushed this plugin to the apache community, so we need to install it "manually" as shown here.
 5. Create a directory named "com.github.cnanders.cordova-3-android-video"
 6. Copy the contents of the repo to helloworld/plugins/com.github.cnanders.cordova-3-android-video.
 7. At this point, the plugin is now "available" but it still won't be added to any platforms.  
