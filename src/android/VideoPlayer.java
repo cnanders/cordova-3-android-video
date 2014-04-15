@@ -6,7 +6,8 @@
  * Copyright (c) 2011, IBM Corporation
  */
 
-package com.phonegap.plugins.video;
+//package com.phonegap.plugins.video;
+package com.github.cnanders.cordova3video;
 
 import java.io.File;
 import java.io.FileOutputStream;
