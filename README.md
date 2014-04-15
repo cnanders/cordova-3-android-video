@@ -26,8 +26,33 @@ A Cordova 3.x compatible version of https://github.com/macdonst/VideoPlayer.  Th
         
 10. Terminal will say "Installing com.github.cnanders.cordova3video (android)"
 
-### Wrap-Up
+### Description of the code the plugin creates in the platform codebase
 
 Lots of cool stuff just happened. If you go to helloworld/platforms/android/src/ you will see the com/github/cnanders/cordova3video folder tree with VideoPlugin.java at the end.  In addition, if you navigate to helloworld/platforms/android/assets/www you will see that videos.js is available within your js folder. In addition, if you navigate to helloworld/platforms/android/res/xml/config.xml you will see that a "feature" node named "VideoPlayer" corresponding to this package has been automagically pushed to config.xml.   
 
 Cordova does this when it installs the plugin to the platform.  But how did cordova know to do this?  If you've never actually looked at how Cordova installs plugins to each platform, it is worth a look since it is simple.  Navigate to helloworld/plugins/com.github.cnanders.cordova3video/plugin.xml.  This XML provides all of the instruction to cordova for how to copy the plugin assets (in this case the .java and .js files bundled with the plugin) into the platform codebase.  The XML should be self-explanitory, just thought I'd point you here since I found it illuminating. 
+
+### Using the plugin
+
+There is a great example here: http://stackoverflow.com/questions/18521807/playing-video-in-phonegap-cordova-app-for-ios-and-android
+
+		<body onload="javascript:init()">
+		<div class="app">
+			<p><a href="#" onclick="playVideo('https://www.youtube.com/watch?v=gYOLV66XukY')">Play File</a><p/>
+		</div>
+		<script type="text/javascript" src="cordova-2.3.0.js"></script>
+		<script type="text/javascript" charset="utf-8" src="video.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+			app.initialize();
+
+			function init()
+			{
+				document.addEventListener("deviceready", console.log('ready'), true);
+			}
+
+			function playVideo(vidUrl) 
+			{
+				window.plugins.videoPlayer.play(vidUrl);
+			}
+		</script>
