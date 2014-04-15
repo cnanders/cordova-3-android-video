@@ -53,6 +53,31 @@ There is a great example here: http://stackoverflow.com/questions/18521807/playi
 
 			function playVideo(vidUrl) 
 			{
+				
 				window.plugins.videoPlayer.play(vidUrl);
+				
+				// REMOTE (WEB) FILES
+				//
+				// Note that I passed in a YouTube video here, which will always work.  
+				//
+				// LOCAL FILES
+				//
+				// Lets say you have a video at helloworld/www/video/test.mp4.  When you
+				// build your Android app, this video will be copied to 	
+				// helloworld/platform/android/assets/www/video/.  In order to play it, 
+				// you need to use the path to the file on the devide: 
+				
+				path = 'file:///android_asset/www/video/test.mp4';	
+				window.plugins.videoPlayer.play(path);
+				
+				// I know it seems weird that you use "android_asset" instead of "asset"
+				// but that is just the way it works as of Cordova 3.4
+				
+				// ONE MORE THING: Video encoding is important, and easy to get wrong.
+				// To be on the safe side when you are initially testing, use a video 
+				// that you take with the actual device you are testing on (email it to
+				// yourself) that way you know this is not the reason the video isn't 
+				// playing.				
+				
 			}
 		</script>
