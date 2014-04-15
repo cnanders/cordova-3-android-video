@@ -2,7 +2,7 @@
 <plugin 
     xmlns="http://www.phonegap.com/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android" 
-    id="com.phonegap.plugins.video" 
+    id="com.github.cnanders.cordova-3-android-video" 
     version="0.0.1">
     
     <name>VideoPlayer</name>
@@ -17,12 +17,12 @@
         <!-- Add to res/xml/config.xml -->
         <config-file target="res/xml/config.xml" parent="/widget">
             <feature name="VideoPlayer">
-                <param name="android-package" value="com.phonegap.plugins.video.VideoPlayer"/>            
+                <param name="android-package" value="com.github.cnanders.cordova-3-android-video.VideoPlayer"/>            
             </feature>
         </config-file>
         
         <!-- Move the java into the platform -->
-        <source-file src="src/android/VideoPlayer.java" target-dir="src/com/phonegap/plugins/video" />
+        <source-file src="src/android/VideoPlayer.java" target-dir="src/com/github/cnanders/cordova-3-android-video" />
 
     </platform>
 </plugin>
