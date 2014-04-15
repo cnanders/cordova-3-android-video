@@ -6,6 +6,9 @@
     version="0.0.1">
     
     <name>VideoPlayer</name>
+    <description>Enables playing HTML5 videos in Android applications</description>
+    <license>Apache 2.0</license>
+    <keywords>android, video, html5 video</keywords>
 
     <asset src="www/video.js" target="js/video.js"/>
 
