@@ -34,7 +34,7 @@ Cordova does this when it installs the plugin to the platform.  But how did cord
 
 ### Using the plugin
 
-There is a great example here: http://stackoverflow.com/questions/18521807/playing-video-in-phonegap-cordova-app-for-ios-and-android
+There is a great example here: http://stackoverflow.com/questions/18521807/playing-video-in-phonegap-cordova-app-for-ios-and-android which I have expanded to include an example of playing a local file.
 
 		<body onload="javascript:init()">
 		<div class="app">
