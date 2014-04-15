@@ -1,6 +1,6 @@
 # cordova-3-android-video
 
-A Cordova 3.x compatible version of https://github.com/macdonst/VideoPlayer with CLI installation.  This makes it possible to play HTML5 videos in a Cordova/PhoneGap Android application.  
+A Cordova 3.x compatible version of https://github.com/macdonst/VideoPlayer.  This makes it possible to play HTML5 videos in a Cordova/PhoneGap Android application.  
 
 ### Installation
 1. Create your cordova project if you haven't already
